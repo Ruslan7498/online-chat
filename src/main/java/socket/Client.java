@@ -29,8 +29,8 @@ public class Client {
                     break;
                 }
                 net.writeLine(message); //отправить сообщение на сервер
-                //String response = net.readLine();
-                //System.out.println(response);
+                String response = net.readLine(); //получить сообщение
+                System.out.println(response); //вывести сообщение
             }
         } finally {
             net.close();

@@ -40,6 +40,6 @@ public class ClientThread implements Runnable {
 
     public void sendMessage(String nameClient, String msg) {
         log.writeMessage(fileName, nameClient, msg); //записать сообщение в файл логирования клиента
-        //net.writeLine(msg);
+        net.writeLine(nameClient + ": " + msg); //отправить сообщение клиентам
     }
 }
